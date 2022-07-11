@@ -1,2 +1,3 @@
-# edu11-1
-Spring Data Jdbc ( Full Version )
+# edu_new2
+
+SpringBoot + JWT + MariaDB

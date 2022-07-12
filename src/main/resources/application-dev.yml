@@ -14,9 +14,11 @@ server:
 spring:
   datasource:
     driverClassName: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+#    url: jdbc:log4jdbc:mysql://localhost:3306/edu
     url: jdbc:log4jdbc:mysql://localhost:3306/edu?useSSL=false
     username: edu
-    password: ENC(3HUh8mWQ56ilVAB2k/5gXQ==)
+    password: edu1234
+    #password: ENC(3HUh8mWQ56ilVAB2k/5gXQ==)
     hikari:
       pool-name: hikari-cp
       maximum-pool-size: 30
@@ -26,7 +28,10 @@ spring:
         prepStmtCacheSize: 250
         prepStmtCacheSqlLimit: 2048
         useServerPrepStmts: true
-
+org:
+  hibernate:
+    dialect:
+      MySQL5Dialect:
 springdoc:
   swagger-ui:
     operations-sorter: alpha

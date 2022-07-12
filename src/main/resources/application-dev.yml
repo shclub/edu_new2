@@ -12,23 +12,11 @@ server:
     threads:
       max: 200
 spring:
-  h2:
-    # h2 DB
-    console:
-      enabled: true
-      path: /h2-console
-  # Database Platform
-  sql:
-    init:
-      platform: h2
-      mode: embedded
   datasource:
     driverClassName: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
-    url: jdbc:log4jdbc:h2:mem:testdb;IGNORECASE=TRUE #jdbc:log4jdbc:tibero:thin:@localhost:8640:POCICISORDDB
-    username: sa
-    password: ENC(hk5/B+52K9XaD+BqzpFaHQ==)
-    # h2 DB
-    generate-unique-name: false
+    url: jdbc:log4jdbc:mysql://db:3306/edu?useSSL=false
+    username: edu
+    password: ENC(3HUh8mWQ56ilVAB2k/5gXQ==)
     hikari:
       pool-name: hikari-cp
       maximum-pool-size: 30

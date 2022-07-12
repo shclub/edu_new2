@@ -5,7 +5,7 @@ server:
     context-path: /
 spring:
   application:
-    name: edu-spring-data-jdbc
+    name: new_employee_edu
   profiles:
     active: local
   banner:
@@ -13,14 +13,6 @@ spring:
 # cache 사용을 위해 cache name 설정
   cache:
     cache-names: employee
-#  security:
-#    user:
-#      name: admin
-#      password: admin
-#  boot:
-#    admin:
-#      client:
-#        url: http://localhost:8080
 
 # logging
 logging:
@@ -48,16 +40,16 @@ jwt:
 # app
 app-info:
   app-name: "edu-spring-data-jdbc"
-  title: "Caravan Edu API"
+  title: "New Employee Edu API"
   build:
     version: '@project.version@'
     timestamp: '@app.build.timestamp@'
   user-id: "jakelee"
-  org-id: "my-home"
+  org-id: "my-kt"
   desc: "EDU 관련 설명입니다."
-  doc-url: "https://github.com/shclub/edu/"
+  doc-url: "https://github.com/shclub/edu_new/"
   license: "Apache License"
-  license_url: "https://github.com/shclub/edu/"
+  license_url: "https://github.com/shclub/edu_new/"
   version: "@app.build.timestamp@"
   doc-desc: "기타정보"
 

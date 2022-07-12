@@ -18,7 +18,7 @@ spring:
     driverClassName: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
     url: jdbc:log4jdbc:h2:mem:testdb;IGNORECASE=TRUE #jdbc:log4jdbc:tibero:thin:@localhost:8640:POCICISORDDB
     username: sa
-    password: ENC(hk5/B+52K9XaD+BqzpFaHQ==)
+    password: ENC(3HUh8mWQ56ilVAB2k/5gXQ==)
     # h2 DB
     generate-unique-name: false
     hikari:
